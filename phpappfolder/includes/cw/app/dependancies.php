@@ -50,5 +50,3 @@ $container['sessionValidator'] = function () {
         return $logging_wrapper;
     };
 
-
-};

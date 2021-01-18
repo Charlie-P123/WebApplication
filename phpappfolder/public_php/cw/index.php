@@ -1,4 +1,5 @@
 <?php
+include_once 'cw/bootstrap.php';
 
 $use_xdebug = true;
 

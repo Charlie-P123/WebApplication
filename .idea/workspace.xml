@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e0336f95-9a54-4f54-a2d9-7e4dcc34cd25" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/phpappfolder/public_php/cw/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpappfolder/public_php/cw/index.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/phpappfolder/includes/cw/app/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1nCmV293KCY4a75ZYFgMPGhTA28" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\charl\Desktop\Final Year\Development Project\Web Application\phpappfolder\includes\cw\app" />
+      <recent name="C:\Users\charl\Desktop\Final Year\Development Project\Web Application\phpappfolder\includes" />
+      <recent name="C:\Users\charl\Desktop\Final Year\Development Project\Web Application\phpappfolder\includes\cw" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web Application/phpappfolder/public_php/cw/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0336f95-9a54-4f54-a2d9-7e4dcc34cd25" name="Default Changelist" comment="" />
+      <created>1610902469439</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610902469439</updated>
+      <workItem from="1610902471305" duration="24970000" />
+      <workItem from="1610933062280" duration="1419000" />
+    </task>
+    <task id="LOCAL-00001" summary="index added">
+      <created>1610911196788</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610911196788</updated>
+    </task>
+    <task id="LOCAL-00002" summary="folders added">
+      <created>1610915064753</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610915064753</updated>
+    </task>
+    <task id="LOCAL-00003" summary="folders added">
+      <created>1610915136215</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610915136215</updated>
+    </task>
+    <task id="LOCAL-00004" summary="sql database">
+      <created>1610916145502</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610916145502</updated>
+    </task>
+    <task id="LOCAL-00005" summary="app files">
+      <created>1610919422835</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610919422835</updated>
+    </task>
+    <task id="LOCAL-00006" summary="settings">
+      <created>1610920378896</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610920378896</updated>
+    </task>
+    <task id="LOCAL-00007" summary="src">
+      <created>1610922282195</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610922282195</updated>
+    </task>
+    <task id="LOCAL-00008" summary="stuff">
+      <created>1610924005901</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610924005901</updated>
+    </task>
+    <task id="LOCAL-00009" summary="stuff">
+      <created>1610929111674</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610929111674</updated>
+    </task>
+    <task id="LOCAL-00010" summary="stuff">
+      <created>1610929868285</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610929868285</updated>
+    </task>
+    <task id="LOCAL-00011" summary="stuff">
+      <created>1610930298016</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610930298016</updated>
+    </task>
+    <task id="LOCAL-00012" summary="stuff">
+      <created>1610930355021</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610930355021</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="index added" />
+    <MESSAGE value="folders added" />
+    <MESSAGE value="sql database" />
+    <MESSAGE value="app files" />
+    <MESSAGE value="settings" />
+    <MESSAGE value="src" />
+    <MESSAGE value="stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="stuff" />
+  </component>
+</project>

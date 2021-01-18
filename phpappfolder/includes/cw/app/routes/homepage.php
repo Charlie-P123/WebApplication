@@ -1,6 +1,6 @@
 <?php
 
-use ...
+use...
 
 $app->get('/', function(Request $request, Response $response)
 {$sid = session_id();

@@ -1,2 +1,2 @@
 <?php
-include_once 'phpappfolder/includes/ce/bootstrap.php';
+include_once '../../includes/cw/bootstrap.php';

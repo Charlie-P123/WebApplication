@@ -1,0 +1,12 @@
+{
+  "require" : {
+    "slim/slim" : "3.*",
+    "slim/twig-view" : "*",
+    "ext-simplexml" : "*",
+    "ext-xml" : "*",
+    "slim/psr7" : "*",
+    "php-di/php-di": "*",
+    "monolog/monolog": "*",
+    "twig/twig": "*"
+  }
+}

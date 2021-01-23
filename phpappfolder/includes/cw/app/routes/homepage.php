@@ -1,8 +1,8 @@
 <?php
 
-use...
+use Slim\Factory\AppFactory;
 
-$app->get('/', function(Request $request, Response $response)
+$app->get('/', function(Slim\Http\Request $request, Slim\Http\Response $response)
 {$sid = session_id();
 
     return $this->view->render($response,

@@ -1,6 +1,7 @@
 <?php
 
 use Slim\Factory\AppFactory;
+require $app_path . 'src/DatabaseWrapper.php';
 
 $app->get('/', function(Slim\Http\Request $request, Slim\Http\Response $response)
 {$sid = session_id();
@@ -12,7 +13,7 @@ $app->get('/', function(Slim\Http\Request $request, Slim\Http\Response $response
             'landing_page' => $_SERVER["SCRIPT_NAME"],
             'action' => 'storesessiondetails',
             'initial_input_box_value' => null,
-            'page_title' => 'Session Demonstration',
+            'page_title' => 'demonstration',
             'page_heading_1' => 'Session Demonstration',
             'page_heading_2' => 'Enter values for storage in a session',
             'page_heading_3' => 'Select the type of session storage to be used',

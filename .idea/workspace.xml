@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0336f95-9a54-4f54-a2d9-7e4dcc34cd25" name="Default Changelist" comment="stuff">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_01_2021_20_32_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_01_2021_20_32__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="e0336f95-9a54-4f54-a2d9-7e4dcc34cd25" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpappfolder/public_php/cw/css/cw.css" beforeDir="false" afterPath="$PROJECT_DIR$/phpappfolder/public_php/cw/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpappfolder/includes/cw/app/templates/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/phpappfolder/includes/cw/app/templates/layout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpappfolder/public_php/cw/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/phpappfolder/public_php/cw/css/stylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/lab 3 secure web app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -81,7 +80,7 @@
       <workItem from="1610902471305" duration="24970000" />
       <workItem from="1610933062280" duration="1419000" />
       <workItem from="1611417107049" duration="2071000" />
-      <workItem from="1611672434956" duration="2208000" />
+      <workItem from="1611672434956" duration="6880000" />
     </task>
     <task id="LOCAL-00001" summary="index added">
       <created>1610911196788</created>
@@ -167,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610930355021</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added some css">
+      <created>1611674903360</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611674903360</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +198,7 @@
     <MESSAGE value="settings" />
     <MESSAGE value="src" />
     <MESSAGE value="stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="stuff" />
+    <MESSAGE value="added some css" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some css" />
   </component>
 </project>

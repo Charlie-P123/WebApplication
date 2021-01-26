@@ -6,18 +6,26 @@ body{
     padding: 0;
 }
 /*header styling */
-header {
+#header {
     margin: 0;
     color: darkgrey;
     text-align: center;
     background-color: #4f7819;
     overflow: hidden; /* background overlaps the heaeder */
 }
+#header h1 {
+    margin: 2px;
+}
+/* aligns to the center */
+.center {
+    width: 700px;
+    margin: 0 auto;
+}
 
 label{
     font-size: large;
 }
-
+/*
 #banner-background{
     width: 100%;
     height: 50px;
@@ -70,3 +78,5 @@ label{
     border: 1px solid #000000;
     border-collapse: collapse;
 }
+*/
+

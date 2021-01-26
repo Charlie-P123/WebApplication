@@ -1,20 +1,28 @@
+/* general styling */
 body{
     background-color: #a9a9a9;
     font-family: Arial, sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
-h2 {
-    padding-top: 1px;
-    margin: 1px;
+/*header styling */
+header {
+    margin: 0;
+    color: darkgrey;
+    text-align: center;
+    background-color: #4f7819;
+    overflow: hidden; /* background overlaps the heaeder */
 }
+
 label{
     font-size: large;
 }
+
 #banner-background{
     width: 100%;
     height: 50px;
 }
+
 #header-text-div {
     width: 100%;
     min-width: 500px;
@@ -27,6 +35,7 @@ label{
     font-size: 11pt;
     border-bottom: 1px solid #77846C;
 }
+
 #login-register-div {
     min-width: 500px;
     height: 50px;
@@ -40,19 +49,23 @@ label{
     text-align: left;
     background: #a9a9a9;
 }
+
 #messages-table-div {
     border: 1px solid #77846C;
     padding: 10px;
 }
+
 #send-message-div{
     border-bottom: 1px solid #77846C;
     border-right: 1px solid #77846C;
     padding: 10px;
 }
+
 #page-content-div
 {
     text-align: left;
 }
+
 #message-table-element, th, td {
     border: 1px solid #000000;
     border-collapse: collapse;

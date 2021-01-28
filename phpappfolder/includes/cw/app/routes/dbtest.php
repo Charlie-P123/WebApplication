@@ -2,7 +2,7 @@
 
 use Slim\Factory\AppFactory;
 
-$app->get('/', function(Slim\Http\Request $request, Slim\Http\Response $response)
+$app->get('/dbtest', function(Slim\Http\Request $request, Slim\Http\Response $response)
 {$sid = session_id();
 
     return $this->view->render($response,
@@ -17,8 +17,8 @@ $app->get('/', function(Slim\Http\Request $request, Slim\Http\Response $response
             'page_heading_2' => 'Enter values for storage in a session',
             'page_heading_3' => 'Select the type of session storage to be used',
             'info_text' => 'Your information will be stored in either a session file or in a database',
-            'sid_text' => 'Your session SID is ',
-            'sid' => $sid,
+            'sid_text' => '',
+            'sid' => print_r(getMessages()->peekMessages('20_2420459','Securewebapp123',3),false),
         ]);
 
-})->setName('homepage');
+}); //->setName('dbtest');

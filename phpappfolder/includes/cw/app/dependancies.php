@@ -50,3 +50,4 @@ $container['sessionValidator'] = function () {
         return $logging_wrapper;
     };
 
+require $app_path . 'src/DatabaseWrapper.php';

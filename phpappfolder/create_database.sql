@@ -1,0 +1,16 @@
+create table messages (
+  id varchar(32),
+  sourceMSISDN varchar(14),
+  destinationMSISDN varchar(14),
+  recievedTime datetime,
+  bearer varchar(10),
+  messageRef Int,
+  groupName varchar(100),
+  switch1 Int,
+  switch2 Int,
+  switch3 Int,
+  switch4 Int,
+  fan varchar(10),
+  heater int,
+  keypad int,
+  primary key (id));

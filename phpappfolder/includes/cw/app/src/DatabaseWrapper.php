@@ -42,7 +42,7 @@ class Message {
 //   a) all messages added to the server since the last time a message was retrieved are in the database (ie. deleted messages won't be readded)
 //   b) array is in order from oldest to newest message
 function getMessages() {
-  $db = createDBConn("localhost","p17170959","Furor=58","m2m");
+  $db = createDBConn("mysql.tech.dmu.ac.uk","p17170959","rEgma+83","p17170959db");
   updateDB($db);
   $msgs = $db->query("SELECT * FROM messages;");
   $r = Array();
@@ -54,7 +54,7 @@ function getMessages() {
 
 // like getMessages, but restricted to messages recieved between the specified times
 function getMessagesIn(DateTime $from, DateTime $to) {
-  $db = createDBConn("localhost","p17170959","Furor=58","m2m");
+  $db = createDBConn("mysql.tech.dmu.ac.uk","p17170959","rEgma+83","p17170959db");
   updateDB($db);
   $statement = $db->prepare("SELECT * FROM messages where recievedTime >= STR_TO_DATE(?,\"%d/%m/%Y %H:%i:%s\") AND recievedTime <= STR_TO_DATE(?,\"%d/%m/%Y %H:%i:%s\");");
   $statement->bind_param("ss",$from,$to);

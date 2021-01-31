@@ -26,6 +26,20 @@
                 <br>
                 <input id="fan_state" type="radio" value="Forward" name="fan_state" checked="checked">Forward
                 <input id="fan_state" type="radio" value="Reverse" name="fan_state">Reverse
+                <br><br>
+                <label for="heater_temp">Enter the temperature in Celsius</label>
+                <br>
+                <input id="heater_temp" name="heater_temp" type="text" value="" size="10" maxlength="50"
+                       placeholder="0">
+                <br><br>
+                <label for="keypad">Enter a number between 0-9</label>
+                <br>
+                <input id="keypad" name="keypad" type="text" size="1" placeholder="0">
+                <br><br>
+                <input type="submit" value="Send Message">
+                <br><br>
+                <input type="reset" value="Reset fields">
             </fieldset>
         </form>
     </div>
+{% endblock %}

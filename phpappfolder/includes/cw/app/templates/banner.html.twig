@@ -1,13 +1,14 @@
 {% extends 'layout.html.twig' %}
 {% block title %}{{ page_title }}{% endblock %}
 {% block banner %}
-    <div id="banner-div">
-        <h1>{{ pahe_heading_1 }}</h1>
-    <p class="'cent">
-        Page last updated on <script type="text/javascript">document.write(document.lastModified)</script>
-        <br />
-    </p>
-    <hr class="deepline"/>
+    <a id="banner-div">
+        <h1>{{ page_heading_1 }}</h1>
+        <p class="cent">
+            Page last updated on <script type = "text/javascript">document.write(document.lastModified)</script>
+            <br />
+        </p>
+        <a href=""{{ landing_page }}">Home page </a>
+        <hr class="deepline"/>
     </div>
     <div id="clear-div"></div>
 {% endblock %}

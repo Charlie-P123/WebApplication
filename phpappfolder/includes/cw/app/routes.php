@@ -1,7 +1,9 @@
 <?php
 
 require 'routes/homepage.php';
-require 'routes/storesessiondetails.php';
-require 'routes/displaysessiondetails.php';
+require 'routes/createmessage.php';
+require 'routes/downloadmessagedata.php';
+require 'routes/sendmessage.php';
+require 'routes/viewmessagedata.php';
 
 require 'routes/dbtest.php'; //testing

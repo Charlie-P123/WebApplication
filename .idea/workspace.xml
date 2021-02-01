@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e0336f95-9a54-4f54-a2d9-7e4dcc34cd25" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpappfolder/includes/cw/app/templates/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/phpappfolder/includes/cw/app/templates/layout.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpappfolder/public_php/cw/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/phpappfolder/public_php/cw/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpappfolder/public_php/cw/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpappfolder/public_php/cw/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +39,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -80,7 +80,10 @@
       <workItem from="1610902471305" duration="24970000" />
       <workItem from="1610933062280" duration="1419000" />
       <workItem from="1611417107049" duration="2071000" />
-      <workItem from="1611672434956" duration="6880000" />
+      <workItem from="1611672434956" duration="7527000" />
+      <workItem from="1612018446670" duration="1984000" />
+      <workItem from="1612113496761" duration="5721000" />
+      <workItem from="1612136773596" duration="1653000" />
     </task>
     <task id="LOCAL-00001" summary="index added">
       <created>1610911196788</created>
@@ -173,7 +176,42 @@
       <option name="project" value="LOCAL" />
       <updated>1611674903360</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added some css and twig template stuff">
+      <created>1611681520233</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1611681520233</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added some css and twig template stuff">
+      <created>1612133589618</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1612133589618</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added some css and twig template stuff">
+      <created>1612133801480</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1612133801480</updated>
+    </task>
+    <task id="LOCAL-00017" summary="added some css and twig template stuff">
+      <created>1612137020574</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1612137020574</updated>
+    </task>
+    <task id="LOCAL-00018" summary="routes.php">
+      <created>1612137371331</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1612137371331</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +227,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="index added" />
@@ -199,6 +238,8 @@
     <MESSAGE value="src" />
     <MESSAGE value="stuff" />
     <MESSAGE value="added some css" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some css" />
+    <MESSAGE value="added some css and twig template stuff" />
+    <MESSAGE value="routes.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="routes.php" />
   </component>
 </project>

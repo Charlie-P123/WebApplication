@@ -1,20 +1,10 @@
-        <h3>Sign In Form</h3>
-        <h4>Your SID is: {{ sid }}</h4>
-        <form action="{{  action }}" method="post">
-            <fieldset>
-                <legend>Details for storage</legend>
-                <br>
-                <label for="username" type="text" value="{{ initial_input_box_value}}" size="30"></label>
-                <br><br>
-                <label for="password" name="password" type="password" value="{{ initial_input_box_value }}" size="30"></label>
-                <br><br>
-                <h3>Select Storage Type</h3>
-                <label for="server_type">Choose your storage</label>
-                <input id="server_type" name="server_type" type="radio" value="file" checkout="checked"/>Session file
-                <input id="server_type" name="server_type" type="radio" value="database"/>Database
-                <br><br>
-                <input type="submit" value="Store the infomration --->">
-            </fieldset>
-        </form>
-        <p class="curr_page"><a href="{{ landing_page }}">Home</a></p>
+{% extends 'banner.html.twig' %}
+{% block content %}
+    <div id="page-content-div">
+        <p>{{ page_text }}</p>
+        <p>Select Option</p>
+        <p><a href="{{ create_message }}">Send message describing circuit board</a></p>
+        <p><a href="{{ view_message }}">View messages</a></p>
+        <br />
     </div>
+{% endblock %}

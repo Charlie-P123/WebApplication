@@ -1,0 +1,45 @@
+{% extends 'banner.html.twig' %}
+{% block content %}
+    <div id="page-content-div">
+        <h2>{{ page_heading_2 }}</h2>
+        <form action="{{ action }}" method="{{ method }}">
+            <p>Choose state of component</p>
+            <br>
+            <fieldset>
+                <label for="switch_1">Switch 1:</label>
+                <input id="switch_1" type="radio" value="On" name="switch_1" checked="checked">On
+                <input id="switch_1" type="radio" value="Off" name="switch_1">Off
+                <br>
+                <label for="switch_2">Switch 2:</label>
+                <input id="switch_2" type="radio" value="On" name="switch_2" checked="checked">On
+                <input id="switch_2" type="radio" value="Off" name="switch_2">Off
+                <br>
+                <label for="switch_3">Switch 3:</label>
+                <input id="switch_3" type="radio" value="On" name="switch_3" checked="checked">On
+                <input id="switch_3" type="radio" value="Off" name="switch_3">Off
+                <br>
+                <label for="switch_4">Switch 4:</label>
+                <input id="switch_4" type="radio" value="On" name="switch_4" checked="checked">On
+                <input id="switch_4" type="radio" value="Off" name="switch_4">Off
+                <br><br>
+                <label for="fan_state">Enter the fan state</label>
+                <br>
+                <input id="fan_state" type="radio" value="Forward" name="fan_state" checked="checked">Forward
+                <input id="fan_state" type="radio" value="Reverse" name="fan_state">Reverse
+                <br><br>
+                <label for="heater_temp">Enter the temperature in Celsius</label>
+                <br>
+                <input id="heater_temp" name="heater_temp" type="text" value="" size="10" maxlength="50"
+                       placeholder="0">
+                <br><br>
+                <label for="keypad">Enter a number between 0-9</label>
+                <br>
+                <input id="keypad" name="keypad" type="text" size="1" placeholder="0">
+                <br><br>
+                <input type="submit" value="Send Message">
+                <br><br>
+                <input type="reset" value="Reset fields">
+            </fieldset>
+        </form>
+    </div>
+{% endblock %}

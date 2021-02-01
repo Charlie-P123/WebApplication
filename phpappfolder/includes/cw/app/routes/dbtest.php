@@ -18,7 +18,7 @@ $app->get('/dbtest', function(Slim\Http\Request $request, Slim\Http\Response $re
             'page_heading_3' => 'Select the type of session storage to be used',
             'info_text' => 'Your information will be stored in either a session file or in a database',
             'sid_text' => '',
-            'sid' => print_r(getMessages(),false),
+            'sid' => print_r(directQuery('SELECT * FROM messages;'),false),
         ]);
 
 }); //->setName('dbtest');

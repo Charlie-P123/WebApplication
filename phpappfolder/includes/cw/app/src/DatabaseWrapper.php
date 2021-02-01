@@ -45,7 +45,7 @@ function getMessages() {
   global $settings;
   $db = createDBConn($settings['settings']['db']['host'], $settings['settings']['db']['user'], $settings['settings']['db']['pass'], $settings['settings']['db']['database']);
   updateDB($db);
-  $msgs = $db->query("SELECT * FROM messages;");
+  $msgs = $db->query("SELECT * FROM messages WHERE sourceMSISDN IS NOT NULL;");
   $r = Array();
   while ($row = $msgs->fetch_assoc()) {
     array_push($r, makeMessage($row));
@@ -58,7 +58,7 @@ function getMessagesIn(DateTime $from, DateTime $to) {
   global $settings;
   $db = createDBConn($settings['settings']['db']['host'], $settings['settings']['db']['user'], $settings['settings']['db']['pass'], $settings['settings']['db']['database']);
   updateDB($db);
-  $statement = $db->prepare("SELECT * FROM messages where recievedTime >= STR_TO_DATE(?,\"%d/%m/%Y %H:%i:%s\") AND recievedTime <= STR_TO_DATE(?,\"%d/%m/%Y %H:%i:%s\");");
+  $statement = $db->prepare("SELECT * FROM messages where recievedTime >= STR_TO_DATE(?,\"%d/%m/%Y %H:%i:%s\") AND recievedTime <= STR_TO_DATE(?,\"%d/%m/%Y %H:%i:%s\") AND sourceMSISDN IS NOT NULL;");
   $statement->bind_param("ss",$from,$to);
   $from = $from->format("d/m/Y H:i:s");
   $to = $to->format("d/m/Y H:i:s");
@@ -73,13 +73,40 @@ function getMessagesIn(DateTime $from, DateTime $to) {
 
 // like getMessages, but restricted to messages that are returned by the given SQL query.
 // order is no longer order of age, but whatever order the query returns.
-function directQuery(String $query, $args) {
-  return Array(new Message());
+// $query is the query string, res=maining aruments as parameters to bind_param()
+// ie - first one is a string of 's' and 'i' indicating strings or numbers, rest are those strings or numbers
+// directQuery('select * from table where x = ? and y = ?', 'is', 3, 'hello');
+function directQuery(String $query, ...$args) {
+  global $settings;
+  $db = createDBConn($settings['settings']['db']['host'], $settings['settings']['db']['user'], $settings['settings']['db']['pass'], $settings['settings']['db']['database']);
+  updateDB($db);
+  $statement = $db->prepare($query);
+  $statement->bind_param(...$args);
+  $statement->execute();
+  $msgs = $statement->get_result();
+  $r = Array();
+  while ($row = $msgs->fetch_assoc()) { // don't return "deleted" rows
+    if (isset($row['sourceMSISDN'])) {
+      array_push($r, makeMessage($row));
+    }
+  }
+  return $r;
 }
 
 // takes a message id and deletes that message from the database.
-function deleteMessage(Int $id) {
-  return true;
+// replaces all except id with NULL rather than truly deleting, this is because we're not deleting from the m2m server so it'd just get added again on the next updateDB()
+function deleteMessage(String $id) {
+  global $settings;
+  $db = createDBConn($settings['settings']['db']['host'], $settings['settings']['db']['user'], $settings['settings']['db']['pass'], $settings['settings']['db']['database']);
+  updateDB($db);
+  $statement = $db->prepare("UPDATE messages SET sourceMSISDN = NULL, destinationMSISDN = NULL, recievedTime = NULL, bearer = NULL, messageRef = NULL, groupName = NULL, switch1 = NULL, switch2 = NULL, switch3 = NULL, switch4 = NULL, fan = NULL, heater = NULL, keypad = NULL WHERE id = ?;");
+  $statement->bind_param('s',$id);
+  $statement->execute();
+  if ($statement) { // return whether successful
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function createSoapClient($wsdl) {

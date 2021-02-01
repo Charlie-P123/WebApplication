@@ -42,7 +42,8 @@ class Message {
 //   a) all messages added to the server since the last time a message was retrieved are in the database (ie. deleted messages won't be readded)
 //   b) array is in order from oldest to newest message
 function getMessages() {
-  $db = createDBConn("mysql.tech.dmu.ac.uk","p17170959_web","fogGy~30","p17170959db");
+  global $settings;
+  $db = createDBConn($settings['settings']['db']['host'], $settings['settings']['db']['user'], $settings['settings']['db']['pass'], $settings['settings']['db']['database']);
   updateDB($db);
   $msgs = $db->query("SELECT * FROM messages;");
   $r = Array();
@@ -54,7 +55,8 @@ function getMessages() {
 
 // like getMessages, but restricted to messages recieved between the specified times
 function getMessagesIn(DateTime $from, DateTime $to) {
-  $db = createDBConn("mysql.tech.dmu.ac.uk","p17170959_web","fogGy~30","p17170959db");
+  global $settings;
+  $db = createDBConn($settings['settings']['db']['host'], $settings['settings']['db']['user'], $settings['settings']['db']['pass'], $settings['settings']['db']['database']);
   updateDB($db);
   $statement = $db->prepare("SELECT * FROM messages where recievedTime >= STR_TO_DATE(?,\"%d/%m/%Y %H:%i:%s\") AND recievedTime <= STR_TO_DATE(?,\"%d/%m/%Y %H:%i:%s\");");
   $statement->bind_param("ss",$from,$to);
@@ -101,8 +103,9 @@ function createDBConn($server, $username, $password, $db) {
 }
 
 function updateDB($db) {
-  $soap = createSoapClient("https://m2mconnect.ee.co.uk/orange-soap/services/MessageServiceByCountry?wsdl");
-  $msgs = $soap->peekMessages('20_2420459','Securewebapp123',5); // hardcoded credentials not a good look
+  global $settings;
+  $soap = createSoapClient($settings['settings']['soap']['wsdl']);
+  $msgs = $soap->peekMessages($settings['settings']['soap']['user'], $settings['settings']['soap']['pass'], 5); // last 5 messages
   $statement = $db->prepare("INSERT INTO messages (id, sourceMSISDN, destinationMSISDN, recievedTime, bearer, messageRef, groupName, switch1, switch2, switch3, switch4, fan, heater, keypad) VALUES (?,?,?,STR_TO_DATE(?,\"%d/%m/%Y %H:%i:%s\"),?,?,?,?,?,?,?,?,?,?);");
   if (!$statement) {
     die("could not prepare statement to update database: " . print_r($db,true));

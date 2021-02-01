@@ -1,4 +1,4 @@
-create table m2m.messages (
+create table messages (
   id varchar(32),
   sourceMSISDN varchar(14),
   destinationMSISDN varchar(14),

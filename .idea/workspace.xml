@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0336f95-9a54-4f54-a2d9-7e4dcc34cd25" name="Default Changelist" comment="added some css and twig template stuff">
-      <change afterPath="$PROJECT_DIR$/phpappfolder/includes/cw/app/src/SoapWrapper.php" afterDir="false" />
+    <list default="true" id="e0336f95-9a54-4f54-a2d9-7e4dcc34cd25" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpappfolder/includes/cw/app/src/SQLQueries.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpappfolder/includes/cw/app/src/SQLQueries.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpappfolder/includes/cw/app/src/SessionWrapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpappfolder/includes/cw/app/src/SessionWrapper.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +86,7 @@
       <workItem from="1612113496761" duration="5721000" />
       <workItem from="1612136773596" duration="313000" />
       <workItem from="1612461517708" duration="1644000" />
-      <workItem from="1612900237357" duration="3423000" />
+      <workItem from="1612900237357" duration="5744000" />
     </task>
     <task id="LOCAL-00001" summary="index added">
       <created>1610911196788</created>
@@ -206,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612137020574</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="soapwrapper">
+      <created>1612916592769</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1612916592769</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,6 +242,7 @@
     <MESSAGE value="stuff" />
     <MESSAGE value="added some css" />
     <MESSAGE value="added some css and twig template stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some css and twig template stuff" />
+    <MESSAGE value="soapwrapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="soapwrapper" />
   </component>
 </project>
